@@ -1,0 +1,40 @@
+.contact {
+    margin-bottom: 1.625rem;
+}
+
+.contactList {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    list-style: none;
+    padding: 0;
+    margin: .625rem -.1875rem;
+    width: 8.75rem;
+}
+
+.contactListItem {
+    padding: 0;
+    margin: .25rem;
+    display: flex;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 35px;
+    width: 2.1875rem;
+    line-height: 2.1875rem;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #ebebeb;
+}
+
+.contactListItemLink {
+    border: 0;
+    display: flex;
+    color: #222;
+}

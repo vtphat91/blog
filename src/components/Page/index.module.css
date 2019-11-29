@@ -1,0 +1,32 @@
+
+@media screen and (min-width: 960px){
+    .page {
+        margin-right: 0;
+        float: left;
+        clear: none;
+        width: calc(60.6% - .625rem);
+        margin-bottom: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 685px){
+    .page {
+        margin-right: 0;
+        float: left;
+        clear: none;
+        width: calc(58.275% - .78125rem);
+        margin-bottom: 3.25rem;
+    }
+}
+
+
+
+.pageInner {
+    padding: 1.5625rem 1.25rem;
+}
+
+.pageBody {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin: 0 0 1.625rem;
+}

@@ -1,0 +1,23 @@
+.menu {
+    margin-bottom: 1.625rem;
+    width: calc(33.3% - 1.25rem);
+}
+
+.menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuListItem {
+    padding: 0;
+    margin: .625rem 0;
+}
+
+.menuListItemLink {
+    border-bottom: 1px solid #222;
+}
+
+.menuItemLink:hover {
+    border-bottom: 1px solid #222;
+}
