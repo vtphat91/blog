@@ -1,0 +1,22 @@
+.postFooter {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 .9375rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 960px){
+    .postFooter {
+        padding-left: 50px;
+    }
+}
+
+
+.postMetaDate {
+    font-style: italic;
+}
+
+p {
+    line-height: 1.625rem;
+    margin-bottom: 1.625rem;
+}

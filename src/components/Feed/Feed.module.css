@@ -13,17 +13,6 @@
     margin: 0 .3125rem;
 }
 
-.feedItemMetaCategoryLink {
-    font-size: .875rem;
-    color: #f7a046;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.feedItemMetaCategoryLink:hover {
-    color: #5d93ff;
-}
-
 .feedItemTitle {
     font-size: 1.6875rem;
     line-height: 2.4375rem;
@@ -51,5 +40,16 @@
 
 .feedItemReadmore {
     font-size: 1rem;
+    color: #5d93ff;
+}
+
+.feedItemMetaCategoryLink {
+    font-size: .875rem;
+    color: #f7a046;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.feedItemMetaCategoryLink:hover {
     color: #5d93ff;
 }

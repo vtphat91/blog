@@ -1,0 +1,27 @@
+
+.postContentTitle {
+    font-size: 2rem;
+    max-width: 40rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.68125rem;
+    margin: 1.625rem auto 0;
+}
+
+
+@media screen and (min-width: 960px){
+    .postContentTitle {
+        font-size: 3rem;
+        line-height: 3.65625rem;
+        margin-top: 3.65625rem;
+        margin-bottom: 2.4375rem;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .postContentBody {
+        font-size: 1.125rem;
+        line-height: 1.82813rem;
+        margin-bottom: 1.82813rem;
+    }
+}

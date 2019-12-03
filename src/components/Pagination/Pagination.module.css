@@ -1,0 +1,39 @@
+.pagination {
+    margin-top: 3.25rem;
+    display: -webkit-box;
+    display: flex;
+}
+
+.paginationPrev {
+    width: 50%;
+    text-align: left;
+}
+
+.paginationNext {
+    width: 50%;
+    text-align: right;
+}
+
+.paginationPrevLink {
+    color: #f7a046;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.paginationNextLink {
+    color: #f7a046;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.paginationPrevLinkDisable {
+    pointer-events: none;
+    color: #bbb;
+    font-size: 1.625rem;
+}
+
+.paginationNextLinkDisable {
+    pointer-events: none;
+    color: #bbb;
+    font-size: 1.625rem;
+}

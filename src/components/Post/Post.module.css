@@ -1,0 +1,38 @@
+.postHomeButton {
+    display: block;
+    max-width: 5.625rem;
+    height: 35px;
+    padding: 0 1.5rem;
+    line-height: 2.1875rem;
+    text-align: center;
+    color: #222;
+    border: 1px solid #e6e6e6;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.625rem;
+}
+
+@media screen and (min-width: 960px){
+    .postHomeButton {
+        position: fixed;
+        max-width: auto;
+        margin: 0;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+.postContent {
+    max-width: 50rem;
+    padding: 0 .9375rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 960px){
+    .postContent {
+        padding-left: 50px;
+    }
+}
