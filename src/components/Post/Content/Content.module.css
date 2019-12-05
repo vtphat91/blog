@@ -25,3 +25,7 @@
         margin-bottom: 1.82813rem;
     }
 }
+
+.postContentBody img {
+    width : 100%;
+}

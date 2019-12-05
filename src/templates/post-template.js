@@ -22,6 +22,7 @@ export const pageQueryPosts = graphql`
             createdAt
             slug
             tags {
+              id
               slug
               title
             }

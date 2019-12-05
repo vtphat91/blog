@@ -2,18 +2,18 @@ import React from 'react'
 import styles from './Menu.module.css'
 import Link from 'gatsby-link'
 
-const Menu = () => (
+const Menu = ({menuList}) => (
     <nav className={styles.menu}>
         <ul className={styles.menuList}>
-            <li className={styles.menuListItem}>
-                <Link to="/" className={styles.menuItemLink}>Test1</Link>     
-            </li>
-            <li className={styles.menuListItem}>
-                <Link to="/" className={styles.menuItemLink}>Test2</Link>     
-            </li>
-            <li className={styles.menuListItem}>
-                <Link to="/" className={styles.menuItemLink}>Test3</Link>     
-            </li>
+        {
+            Object.keys(menuList).map(menu => {
+                return (
+                    <li className={styles.menuListItem} key={menuList[menu]}>
+                        <Link to={menuList[menu]} className={styles.menuItemLink}>{menu}</Link>     
+                    </li>
+                )
+            })
+        }
         </ul>
     </nav>
 )

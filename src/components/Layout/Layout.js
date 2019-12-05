@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../Container'
 import styles from './Layout.module.css'
+import SEO from '../../components/SEO'
 
 
 const LocaleContext = React.createContext()

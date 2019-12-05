@@ -38,3 +38,23 @@
     display: flex;
     color: #222;
 }
+
+.contactIcon {
+    display: inline-block;
+    width: 1.5em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

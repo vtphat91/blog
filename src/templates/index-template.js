@@ -38,6 +38,7 @@ export const queryIndexTemplate = graphql`
         posts :  allContentfulBlogPost(limit: $postsLimit, skip: $postsOffset) {
                 edges {
                     node {
+                      id
                       title
                       createdAt
                       slug

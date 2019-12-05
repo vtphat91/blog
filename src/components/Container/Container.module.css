@@ -17,3 +17,20 @@ body {
 a {
     text-decoration: none;
 }
+
+figcaption {
+    line-height: 1.21875rem;
+    margin-top: .40625rem;
+    color: #222;
+    font-size: .875rem;
+    font-style: italic;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+figure {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
