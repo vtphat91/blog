@@ -1,6 +1,6 @@
 
 module.exports = {
-    postsPerPage: 2,
+    postsPerPage: 4,
     author : {
         authorTitle: 'PhatVT',
         authorSubtitle: 'Code less, learn more',
