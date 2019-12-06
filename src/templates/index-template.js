@@ -37,7 +37,7 @@ export default IndexTemplate
 
 export const queryIndexTemplate = graphql`
     query queryIndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
-        posts :  allContentfulBlogPost(limit: $postsLimit, skip: $postsOffset) {
+        posts :  allContentfulBlogPost(limit: $postsLimit, skip: $postsOffset, sort: {order: DESC, fields: createdAt}) {
                 edges {
                     node {
                       id

@@ -8,7 +8,7 @@ const Feed = ({posts}) => (
         {posts && posts.edges.map(post=>(
             <div className={styles.feedItem} key={post.node.id}>
                 <div >
-                    <time className={styles.feedItemMetaTime} dateTime={moment(post.node.createAt).format('MMMM D, YYYY')}>{moment(post.node.createAt).format('MMMM D, YYYY')}</time>
+                    <time className={styles.feedItemMetaTime} dateTime={moment(post.node.createdAt).format('MMMM D, YYYY')}>{moment(post.node.createdAt).format('MMMM D, YYYY')}</time>
                     <span className={styles.feedItemMetaDivider}></span>
                     <span>
                         <Link to={`/category/${post.node.category.slug}/`} className={styles.feedItemMetaCategoryLink} >{post.node.category.title} &ensp;</Link>
