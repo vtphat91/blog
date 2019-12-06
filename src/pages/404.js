@@ -1,7 +1,7 @@
 import React from 'react'
-import SlideBar from '../../components/SlideBar'
-import SEO from '../../components/SEO'
-import styles from '../404/404.module.css'
+import SlideBar from '../components/SlideBar'
+import SEO from '../components/SEO'
+import styles from './404.module.css'
 import {Link} from 'gatsby'
 
 const NotFoundPage = () => (
