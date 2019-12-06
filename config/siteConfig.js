@@ -9,7 +9,7 @@ module.exports = {
         'Articles':'/',
         'Categories':'/categories',
         'Tags':'/tags',
-        'About me':'/pages/about-me'
+        'About me':'/pages/about-me1111111'
     },
     contacts : [
         'facebook',
