@@ -1,11 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
 import SlideBar from "../components/SlideBar"
 import Page from '../components/Page'
 import Pagination from '../components/Pagination'
 import Feed from '../components/Feed'
-
+import SEO from '../components/SEO'
 
 const TagsTemplate = ({data, pageContext}) => {
 
@@ -19,6 +18,7 @@ const TagsTemplate = ({data, pageContext}) => {
   
     return (
           <>
+            <SEO  title='Tags' customSEO/>
             <SlideBar />
             <Page posts={data.posts} >
               <Feed posts={data.posts}/>

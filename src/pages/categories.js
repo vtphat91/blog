@@ -1,15 +1,16 @@
 import React from 'react'
-
 import SlideBar from '../components/SlideBar'
 import Page from '../components/Page'
 import { Link, useStaticQuery ,graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
+import SEO from '../components/SEO'
 
 const CategoriesPage = () => {
 
     const { categories } = useStaticQuery(queryCategories) ;
     return (
         <>
+            <SEO  title='Categories' customSEO/>
             <SlideBar />
             <Page title="Categories">
                 <ul>

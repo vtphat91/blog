@@ -5,6 +5,7 @@ import SlideBar from "../components/SlideBar"
 import Page from '../components/Page'
 import Pagination from '../components/Pagination'
 import Feed from '../components/Feed'
+import SEO from '../components/SEO'
 
 const IndexTemplate = ({data, pageContext}) => {
 
@@ -18,6 +19,7 @@ const IndexTemplate = ({data, pageContext}) => {
 
   return (
         <>
+          <SEO />
           <SlideBar />
           <Page posts={data.posts} >
             <Feed posts={data.posts}/>

@@ -1,11 +1,14 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Post from '../components/Post'
+import SEO from '../components/SEO'
 
 const PostTemplate = ({data : {post}}) => {
+    const {title, slug } = post ;
 
     return (
         <>
+            <SEO  title={`Posts - ${title}`} pageUrl={slug} customSEO/>
             <Post post={post} />   
         </>
     )

@@ -10,19 +10,19 @@ const SEO = ({ description, title, pageUrl, customSEO }) => {
     let siteTitle ;
     let sitePageUrl ;
     let image = author ;
-
-    if(customSEO){
+    if(!customSEO){
         sitePageUrl = siteConfig.siteUrl;
         siteDescription = siteConfig.siteDescription;
         siteTitle = siteConfig.siteTitle;
     }else{
-       siteDescription = description;
-       siteTitle = title;
-       sitePageUrl = pageUrl;
+       siteDescription = description != null ? description : siteConfig.siteDescription;
+       siteTitle = title != null ? title : siteConfig.siteTitle;
+       sitePageUrl = pageUrl != null ? pageUrl : siteConfig.siteUrl;
     }
-
   return (
     <Helmet>
+    <title>{siteTitle}</title>
+    <link rel="icon" type="image/png" href={image}  />
     {/* General tags */}
     <meta name="image" content={image} />
     <meta name="description" content={siteDescription} />

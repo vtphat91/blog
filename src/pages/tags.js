@@ -1,16 +1,16 @@
 import React from 'react'
-
 import SlideBar from '../components/SlideBar'
 import Page from '../components/Page'
 import { Link, useStaticQuery ,graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
+import SEO from '../components/SEO'
 
 const TagsPage = () => {
 
     const { tags } = useStaticQuery(queryTags) ;
-    console.log(tags);
     return (
         <>
+            <SEO  title='Tags' customSEO/>
             <SlideBar />
             <Page title="Tags">
                 <ul>
