@@ -1,0 +1,11 @@
+.TagListItemLink {
+    border-bottom: 1px solid #222;
+}
+
+.TagItemLink:hover {
+    border-bottom: 1px solid #222;
+}
+
+.TagItemLink {
+    color: black;
+}

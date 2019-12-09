@@ -4,24 +4,18 @@ import Page from '../components/Page'
 import { Link, useStaticQuery ,graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import SEO from '../components/SEO'
+import Tags from '../components/Tags'
 
 const TagsPage = () => {
 
     const { tags } = useStaticQuery(queryTags) ;
+
     return (
         <>
             <SEO  title='Tags' customSEO/>
             <SlideBar />
             <Page title="Tags">
-                <ul>
-                    {tags.group.map((tag) => (
-                        <li key={tag.fieldValue}>
-                        <Link to={`/tag/${kebabCase(tag.fieldValue)}/`}>
-                            {tag.fieldValue} ({tag.totalCount})
-                        </Link>
-                        </li>
-                    ))}
-                </ul>
+                <Tags tags={tags} />
             </Page>
         </>
     )

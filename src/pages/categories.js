@@ -1,27 +1,21 @@
 import React from 'react'
 import SlideBar from '../components/SlideBar'
 import Page from '../components/Page'
-import { Link, useStaticQuery ,graphql } from 'gatsby';
-import kebabCase from 'lodash/kebabCase';
+import { useStaticQuery ,graphql } from 'gatsby';
+
 import SEO from '../components/SEO'
+import Categories from '../components/Categories'
 
 const CategoriesPage = () => {
 
     const { categories } = useStaticQuery(queryCategories) ;
+
     return (
         <>
             <SEO  title='Categories' customSEO/>
             <SlideBar />
             <Page title="Categories">
-                <ul>
-                    {categories.group.map((category) => (
-                        <li key={category.fieldValue}>
-                        <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
-                            {category.fieldValue} ({category.totalCount})
-                        </Link>
-                        </li>
-                    ))}
-                </ul>
+                <Categories categories={categories} />
             </Page>
         </>
     )

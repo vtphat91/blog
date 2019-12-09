@@ -1,0 +1,11 @@
+.categoriesListItemLink {
+    border-bottom: 1px solid #222;
+}
+
+.categoriesItemLink:hover {
+    border-bottom: 1px solid #222;
+}
+
+.categoriesItemLink {
+    color: black;
+}
